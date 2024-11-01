@@ -2,9 +2,9 @@ import React from 'react';
 import ImageComponent from '@/components/ImageComponent';
 import TextContent from '@/components/TextContent';
 
-interface AboutMeProps {}
+//interface AboutMeProps {}
 
-const AboutMe: React.FC<AboutMeProps> = () => {
+const AboutMe: React.FC = () => {
   return (
     <main className="flex justify-center items-center px-16 py-20 bg-gray-800 max-md:px-5">
       <div className="mt-14 w-full max-w-[1234px] max-md:mt-10 max-md:max-w-full">
