@@ -13,7 +13,8 @@ const works = [
 const WorkGrid: React.FC = () => {
   return (
     <div className="z-10 self-center px-5 mt-12 w-full max-w-[1200px] max-md:mt-10 max-md:max-w-full">
-      <div className="flex gap-5 flex-wrap max-md:flex-col">
+      {/* <div className="flex gap-5 flex-wrap max-md:flex-col"> */}
+      <div className="grid gap-5 grid-cols-3 max-md:flex-col">
         {works.map((work, index) => (
           <WorkItem key={index} src={work.src} alt={work.alt} />
         ))}

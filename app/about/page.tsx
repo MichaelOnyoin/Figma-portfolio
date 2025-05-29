@@ -1,12 +1,17 @@
 import React from 'react';
 import ImageComponent from '@/components/ImageComponent';
 import TextContent from '@/components/TextContent';
-
+//import Layout from '@/components/Layout';
+// import Header from '@/components/Header';
+// import Footer from '@/components/Footer';
 //interface AboutMeProps {}
 
 const AboutMe: React.FC = () => {
   return (
+    <div>
+    
     <main className="flex justify-center items-center px-16 py-20 bg-gray-800 max-md:px-5">
+      
       <div className="mt-14 w-full max-w-[1234px] max-md:mt-10 max-md:max-w-full">
         <div className="flex gap-5 max-md:flex-col">
           <section className="flex flex-col w-[41%] max-md:ml-0 max-md:w-full">
@@ -51,6 +56,8 @@ const AboutMe: React.FC = () => {
         </div>
       </div>
     </main>
+    
+   </div>
   );
 };
 
