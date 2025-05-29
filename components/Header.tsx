@@ -6,7 +6,7 @@ const Header: React.FC = () => {
     <header className="flex flex-col items-center pb-16">
       <div className="flex gap-5 justify-between px-5 w-full max-w-[1344px] max-md:flex-wrap max-md:max-w-full">
         <h1 className="my-auto text-2xl font-bold text-zinc-100">
-          Onyoin Design
+          My Portfolio
         </h1>
         <Navigation />
       </div>

@@ -1,10 +1,7 @@
 import React from 'react';
 import ImageComponent from '@/components/ImageComponent';
 import TextContent from '@/components/TextContent';
-//import Layout from '@/components/Layout';
-// import Header from '@/components/Header';
-// import Footer from '@/components/Footer';
-//interface AboutMeProps {}
+
 
 const AboutMe: React.FC = () => {
   return (

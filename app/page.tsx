@@ -1,17 +1,17 @@
 import React from 'react';
 import Layout from '@/components/Layout';
 import Hero from '@/components/Hero';
-//import RecentWorks from '@/components/RecentWorks';
 import WorkFilter from '@/components/WorkFilter';
-//import Portfolio from '@/components/Filter';
+//import Navbar from '@/components/Navbar';
+import ContactForm from '@/components/Contact';
 
 const Home: React.FC = () => {
   return (
     <Layout>
+     
       <Hero />
       <WorkFilter/>
-      {/* <RecentWorks /> */}
-      {/* <Portfolio/> */}
+      <ContactForm/>
     </Layout>
   );
 };

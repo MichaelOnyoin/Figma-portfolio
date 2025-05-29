@@ -7,7 +7,7 @@ const Navigation: React.FC = () => {
         <li className="flex flex-col w-[23%] max-md:ml-0 max-md:w-full">
           <a href="#" className="text-lg text-zinc-100 max-md:mt-10">Home</a>
         </li>
-        <li className="flex flex-col ml-5 w-[37%] max-md:ml-0 max-md:w-full">
+        <li className="flex flex-col ml-5 w-[27%] max-md:ml-0 max-md:w-full">
           <a href="/about" className="text-lg text-zinc-100 max-md:mt-10">About Me</a>
         </li>
         <li className="flex flex-col ml-5 w-[39%] max-md:ml-0 max-md:w-full">
