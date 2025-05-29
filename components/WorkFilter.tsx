@@ -8,6 +8,8 @@ interface WorkItem {
   id: number;
   image: string;
   categories: Category[];
+  description:string;
+  title:string;
 }
 
 
@@ -16,27 +18,47 @@ const workItems: WorkItem[] = [
     id: 1,
     image: "https://cdn.builder.io/api/v1/image/assets/TEMP/e8ad5526321755d9963aa0dce470f313368f817f71b0d8cdc2f96d4ccc366767?apiKey=2c0ef7d7caa24d8d8c04d3962010fc58&",
     categories: ["All", "UI", "UX"],
+    description:"hey",
+    title:'hello'
+
   },
   {
     id: 2,
     image: "https://cdn.builder.io/api/v1/image/assets/TEMP/11a3d2220aec7d05a43243b8cd6ecde1024d615641b7c0bed3be8dee8b21ff13?apiKey=2c0ef7d7caa24d8d8c04d3962010fc58&",
     categories: ["All", "Web Design"],
+    description:"hey nerd",
+    title:'hello'
   },
   {
     id: 3,
     image: "https://cdn.builder.io/api/v1/image/assets/TEMP/5f2707900aeeb97ceecdc72b465f7ec5d173a2ea49f2fb0873675518235a7eb8?apiKey=2c0ef7d7caa24d8d8c04d3962010fc58&",
     categories: ["All", "UI"],
+    description:"hey dumby",
+    title:'hello'
   },
   {
     id:4,
     image:'/careviewlogo(2).svg',
-    categories:["All","Web Design"]
+    categories:["All","Web Design"],
+    description:"hey pass",
+    title:'hello'
+
 
   },
   {
     id:5,
     image:'/chatbot.svg',
-    categories:["All","Web Design"]
+    categories:["All","Web Design"],
+    description:"hey dock",
+    title:'hello'
+
+  },
+  {
+    id:6,
+    image:'https://cdn.builder.io/api/v1/image/assets/TEMP/aa10f7d7ae5cfb9ef954e6915aa1d901b8a54e148aed165e73c31dd96c32de4e?apiKey=2c0ef7d7caa24d8d8c04d3962010fc58&',
+    categories:["All","UI","UX"],
+    description:"hey there",
+    title:'hello'
 
   },
 ];
@@ -70,13 +92,14 @@ const WorkFilter: React.FC = () => {
         </button>
       ))}
     </div>
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 ">
       
         {filteredItems.map((item) => (
          
-          <div className='mx-4 mt-10'  key={item.id}>
+          <div className='mx-4 mt-10 hover:translate-y-[-5%] shadow-lg hover:shadow-indigo-500 rounded-xl transition-transform duration-300 ease-in-out'  key={item.id}>
             
-            <WorkItem src={item.image} alt={`Work ${item.id}`} />
+            <WorkItem src={item.image} alt={`Work ${item.id}`} description={item.description} title={item.title}/>
+            
           </div>
         ))}
       </div>
