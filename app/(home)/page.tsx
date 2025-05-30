@@ -2,14 +2,15 @@ import React from 'react';
 import Layout from '@/components/Layout';
 import Hero from '@/components/Hero';
 import WorkFilter from '@/components/WorkFilter';
-//import Navbar from '@/components/Navbar';
 import ContactForm from '@/components/Contact';
+import Skills from '@/components/skills/Skills';
 
 const Home: React.FC = () => {
   return (
     <Layout>
-     
+      
       <Hero />
+      <Skills/>
       <WorkFilter/>
       <ContactForm/>
     </Layout>
@@ -18,6 +19,6 @@ const Home: React.FC = () => {
 
 export default Home;
 export const metadata = {
-  title: 'Onyoin Design',
+  title: 'Onyoins Portfolio',
   description: 'A showcase of design works by Onyoin Design',
 };

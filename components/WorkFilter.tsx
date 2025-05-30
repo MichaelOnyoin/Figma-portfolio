@@ -75,7 +75,7 @@ const WorkFilter: React.FC = () => {
     );
   return (
     <div>
-      <h2 className="self-start mt-48 ml-32 text-6xl font-bold max-md:mt-10 max-md:max-w-full max-md:text-4xl">
+      <h2 className="container mx-auto self-start mt-48 ml-32 text-6xl font-bold max-md:mt-10 max-md:max-w-full max-md:text-4xl">
         <span className="text-zinc-100">My recent</span>{" "}
         <span className="text-teal-500">works</span>
       </h2>
