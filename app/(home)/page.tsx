@@ -2,8 +2,8 @@ import React from 'react';
 import Layout from '@/components/Layout';
 import Hero from '@/components/Hero';
 import WorkFilter from '@/components/WorkFilter';
-import ContactForm from '@/components/Contact';
 import Skills from '@/components/skills/Skills';
+import ContactForm from '@/components/ContactPage';
 
 const Home: React.FC = () => {
   return (

@@ -19,11 +19,11 @@ const Hero: React.FC = () => {
             <div className="flex gap-4 max-md:flex-wrap">
               <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/46de12bf90a69d30dd44598315673a64251bc0a18ce9b6b6e90554f43a68a603?apiKey=2c0ef7d7caa24d8d8c04d3962010fc58&" alt="" className="shrink-0 my-auto border-solid aspect-[0.33] border-[5px] border-teal-500 border-opacity-20 stroke-[5px] stroke-teal-500 stroke-opacity-20 w-[77px]" />
               <div className="flex flex-col grow shrink-0 px-5 basis-0 w-fit max-md:max-w-full">
-                <div className="flex gap-5 justify-between self-start mt-12 text-lg text-zinc-100 max-md:mt-10">
-                  <button className="px-8 py-2.5 bg-teal-500 rounded-3xl max-md:px-5 animate-pulse ">
+                <div className="flex gap-5 justify-between  self-start mt-12 text-lg text-zinc-100 max-md:mt-10">
+                  <button className="px-8 py-2.5 bg-teal-500 text-shadow-lg rounded-3xl max-md:px-5 animate-pulse ">
                     Hire me
                   </button>
-                  <button className="flex gap-2.5 px-8 py-2.5 rounded-3xl backdrop-blur-[2px] bg-zinc-700 bg-opacity-80 max-md:px-5 btn-primary hover:text-teal-500">
+                  <button className="flex gap-2.5 px-8 py-2.5 text-shadow-lg rounded-3xl backdrop-blur-[2px] bg-zinc-700 bg-opacity-80 max-md:px-5 btn-primary hover:text-teal-500">
                     Download CV
                     <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/d3e68be090d5f718a3a3f4f0513996372d1a338c1d11efb1fcb57a23d5d13b67?apiKey=2c0ef7d7caa24d8d8c04d3962010fc58&" alt="" className="shrink-0 my-auto w-6 aspect-square animate-bounce" />
                   </button>

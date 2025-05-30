@@ -74,16 +74,16 @@ const WorkFilter: React.FC = () => {
       selectedCategory === "All" ? true : item.categories.includes(selectedCategory)
     );
   return (
-    <div>
+    <div className='bg-[url(/devBg.svg)] bg-center bg-fixed mt-20 '>
       <h2 className="container mx-auto self-start mt-48 ml-32 text-6xl font-bold max-md:mt-10 max-md:max-w-full max-md:text-4xl">
         <span className="text-zinc-100">My recent</span>{" "}
         <span className="text-teal-500">works</span>
       </h2>
-    <div className="flex gap-4 self-start pr-14 mt-4 ml-32 text-lg font-bold text-zinc-100 max-md:flex-wrap max-md:pr-5">
+     <div className="flex gap-4 self-start pr-14 mt-4 ml-32 text-lg font-bold text-zinc-100 max-md:flex-wrap max-md:pr-5">
       {filters.map((cat) => (
         <button
           key={cat}
-          className={`px-8 py-2.5 whitespace-nowrap rounded-3xl max-md:px-5 ${
+          className={`px-8 py-2.5 whitespace-nowrap hover:bg-teal-500 rounded-3xl max-md:px-5 ${
             selectedCategory === cat ? 'bg-teal-500' : 'backdrop-blur-sm bg-zinc-700 bg-opacity-50'
           }`}
            onClick={() => setSelectedCategory(cat)}
@@ -92,11 +92,11 @@ const WorkFilter: React.FC = () => {
         </button>
       ))}
     </div>
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 ">
       
         {filteredItems.map((item) => (
          
-          <div className='mx-4 mt-10 hover:translate-y-[-5%] shadow-lg hover:shadow-indigo-500 rounded-xl transition-transform duration-300 ease-in-out'  key={item.id}>
+          <div className='mx-4 mt-10 hover:translate-y-[-5%] shadow-lg hover:shadow-indigo-500 rounded-xl transition-transform duration-300 ease-in-out mb-20'  key={item.id}>
             
             <WorkItem src={item.image} alt={`Work ${item.id}`} description={item.description} title={item.title}/>
             
